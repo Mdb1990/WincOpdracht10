@@ -1,0 +1,52 @@
+/** @format */
+
+* {
+  font-size: 40px;
+}
+
+header {
+  background-color: rgb(230, 61, 61);
+}
+
+main {
+  background-color: aquamarine;
+}
+
+section {
+  background-color: blueviolet;
+}
+
+footer {
+  background-color: chocolate;
+}
+
+.grid {
+  display: grid;
+  grid-template: 30% 100% 50% 30% / auto;
+  text-align: center;
+}
+
+@media (min-width: 1281px) {
+  .grid {
+    display: grid;
+    grid-template: 30% 400% 50% 30% / 50% 50%;
+  }
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .item4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
